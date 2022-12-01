@@ -10,4 +10,4 @@ Repo about me
 
 https://github.com/Rafael-Aldana
 
-### REflections and comments
+### Reflections and comments

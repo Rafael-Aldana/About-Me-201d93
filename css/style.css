@@ -3,6 +3,7 @@ body {
   background-color: white;
   margin-top: 50px;
   font-family: Helvetica, sans-serif;
+  width: 95%;
 }
 h1 {
   background-color: aquamarine;
@@ -10,4 +11,6 @@ h1 {
   text-align: center;
   margin-bottom: 50px;
   font-family: 'Lodrina Shadow', cursive;
+  padding: auto;
+
 }
