@@ -87,7 +87,7 @@ if(questionSixGuess > myNum){
 
 let favoriteFood = ['Pizza', 'burger', 'Spaghetti'];
 for(let i = 0; i < 6; i++) {
-  let questionSevenGuess = prompt('Can you guess what is my favorite food?');
+  let questionSevenGuess = prompt(`Can you guess what is my favorite food? You have ${6 - i} guesses left.`);
 
 for(let j = 0; j < favoriteFood.length; j++) {
  if (questionSevenGuess === favoriteFood[j]){
