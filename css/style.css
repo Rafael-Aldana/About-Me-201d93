@@ -12,5 +12,11 @@ h1 {
   margin-bottom: 50px;
   font-family: 'Lodrina Shadow', cursive;
   padding: auto;
-
 }
+ol, ul {
+margin-top: 10px;
+margin-left: 3%;
+position: relative;
+list-style-type: upper-roman; color: red;
+}
+

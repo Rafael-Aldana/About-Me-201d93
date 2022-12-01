@@ -68,31 +68,34 @@ if(questionFiveGuess === 'yes' || questionFiveGuess === 'y') {
   alert('Hey play the game.');
 }
 
-alert('Let\'s play a number guessing game now. What number 1-10 am I thinking of? You have 4 tries.');
+let myNum = 7;
+for(let i = 0; i < 4; i++) {
+  let questionSixGuess = +prompt('Let\'s play a number guessing game now. What number 1-10 am I thinking of? You have 4 tries.');
 
-let questionSixAnswer = 3; 
-let questionSix = prompt('What is your guess');
-
-for(i=0; i<4; i++) {
-  if(questionSixAnswer == questionSix) {
-    alert('You are correct!')
-  }
+if(questionSixGuess > myNum){
+  alert('Sorry too high');
+} else if(questionSixGuess < myNum) {
+  alert('Sorry too low');
+} else if(questionSixGuess === myNum) {
+  alert('By gum you are correct!');
+  break;
 }
+}
+//if attempts === 0 -> alert the user know the correct answer.
 
 
 
-let questionSevenArray = ['Pizza', 'burger', 'Spaghetti'];
-let questionSevenAttempts = 6;
+let favoriteFood = ['Pizza', 'burger', 'Spaghetti'];
+for(let i = 0; i < 6; i++) {
+  let questionSevenGuess = prompt('Can you guess what is my favorite food?');
 
-let questionSevenGuess = prompt(`Can you guess what is my favorite food? You have ${questionSevenAttempts} guesses left.`);
-
-let questionSevenIndex = questionSevenArray.indexOf(parseInt(questionSevenGuess));
-
-if (questionSevenIndex === 'Pizza') {
-  alert(`You are correct! That is one of my favorite foods. ${questionSevenArray}`);
-} else if(questionSevenAttempts > 1) {
-  alert('Good try! Keep guessing.');
-
+for(let j = 0; j < favoriteFood.length; j++) {
+ if (questionSevenGuess === favoriteFood[j]){
+  alert('You are correct! That is one of my favorite kinds of foods.');
+  i = 6;
+  break;
+ }
+}
 }
 
 
