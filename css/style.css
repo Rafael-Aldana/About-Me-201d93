@@ -1,9 +1,11 @@
 
 body {
-  background-color: white;
+  background-color: black;
   margin-top: 50px;
   font-family: Helvetica, sans-serif;
   width: 95%;
+  color: white;
+  font-size: 2vw;
 }
 h1 {
   background-color: aquamarine;
@@ -11,12 +13,23 @@ h1 {
   text-align: center;
   margin-bottom: 50px;
   font-family: 'Lodrina Shadow', cursive;
-  padding: auto;
+  padding: 1%;
+  border: 5px solid red; 
+  width: 100%;
+  color: black;
 }
-ol, ul {
+ol {
 margin-top: 10px;
 margin-left: 3%;
 position: relative;
 list-style-type: upper-roman; color: red;
+font-size: 2vw;
 }
 
+ul {
+  margin-top: 10px;
+margin-left: 3%;
+position: relative;
+list-style-type: upper-roman; color: lightblue;
+font-size: 2vw;
+}

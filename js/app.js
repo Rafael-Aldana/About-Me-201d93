@@ -108,31 +108,25 @@ questionSixFunc();
 
 
 function questionSevenFunc() {
-  let favoriteFood = ['Pizza', 'burger', 'Spaghetti'];
-  for(let i = 0; i < 6; i++) {
-    let questionSevenGuess = prompt('Can you guess what is my favorite food?');
-  }
-let favoriteFood = ['Pizza', 'burger', 'Spaghetti'];
-for(let i = 0; i < 6; i++) {
-  let questionSevenGuess = prompt(`Can you guess what is my favorite food? You have ${6 - i} guesses left.`);
 
-for(let j = 0; j < favoriteFood.length; j++) {
- if (questionSevenGuess === favoriteFood[j]){
-  alert('You are correct! That is one of my favorite kinds of foods.');
-  i = 6;
-  break;
- }
-    for(let j = 0; j < favoriteFood.length; j++) {
-      if (questionSevenGuess === favoriteFood[j]){
-        alert('You are correct! That is one of my favorite kinds of foods.');
-        score++;
-        i = 6;
-        break;
-      }
+    let favoriteFood = ['pizza', 'burger', 'spaghetti'];
+
+    let Guess = 6;
+
+    for(let i = 0; i < 6; i++) {
+    let questionSevenGuess = prompt(`Can you guess what is my favorite food? You have ${6 - i} guesses left.`);
+    for(let f = 0; f < favoriteFood.length; f++) {
+    if (questionSevenGuess === favoriteFood[f]){
+    alert('You are correct! That is one of my favorite kinds of food.');
+    score++;
+    i = 6;
+    break;
     }
-  }
-}
-}
+    }
+    }
+    alert(`By the way these are my favorite kinds of food ${favoriteFood}.`);
+    }
+
 questionSevenFunc();
 
 alert(`Thanks for playing ${userName} your overall score was ${score}.`);
