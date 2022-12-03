@@ -129,7 +129,7 @@ function questionSevenFunc() {
 
 questionSevenFunc();
 
-alert(`Thanks for playing ${userName} your overall score was ${score}.`);
+alert(`Thanks for playing ${userName} your overall score was ${score} see ya!.`);
 
 
 
